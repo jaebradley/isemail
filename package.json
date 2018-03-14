@@ -4,7 +4,6 @@
   "version": "3.1.1",
   "repository": "git://github.com/jaebradley/isemail-es5",
   "main": "build/index.js",
-  "types": "build/index.d.ts",
   "keywords": [
     "isemail",
     "validation",
