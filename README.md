@@ -1,18 +1,24 @@
-# isemail
+# isemail-es5
 
 Node email address validation library
 
-[![Build Status](https://travis-ci.org/hapijs/isemail.svg?branch=master)](https://travis-ci.org/hapijs/isemail)<a href="#footnote-1"><sup>&#91;1&#93;</sup></a>
+This library is a port of the PHP `is_email` function by Dominic Sayers. It's almost entirely based off of [`hapijs/isemail`](https://github.com/hapijs/isemail)...except that it's been compiled to `ES5`.
 
-Lead Maintainer: [Eli Skeggs][skeggse]
+`hapijs` has openly chosen not to compile their code to `ES5`
 
-This library is a port of the PHP `is_email` function by Dominic Sayers.
+> It is up to the developer to make the code work in their environment. Across the org, we do not include a single line of cleint-side transformation code.
+- [`hapijs/isemail#27`](https://github.com/hapijs/isemail/issues/27)
+
+> The hapijs organization hosts modules that are designed for server-side use, and we as an organization decided to relatively quickly drop support for older versions of Node.js. We use the latest features to ease development, and browser support is not within scope.
+- [`hapijs/isemail#158](https://github.com/hapijs/isemail/issues/158)
+
+However, there are those that might need an `ES5` version of `isemail` and don't want to specify transpilation for only this package in the `node_modules` folder in a webpack config, for example.
 
 Install
 =======
 
 ```sh
-$ npm install isemail
+$ npm install isemail-es5
 ```
 
 Test
