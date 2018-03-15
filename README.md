@@ -10,7 +10,7 @@ This library is a port of the PHP `is_email` function by Dominic Sayers. It's al
 - [`hapijs/isemail#27`](https://github.com/hapijs/isemail/issues/27)
 
 > The hapijs organization hosts modules that are designed for server-side use, and we as an organization decided to relatively quickly drop support for older versions of Node.js. We use the latest features to ease development, and browser support is not within scope.
-- [`hapijs/isemail#158](https://github.com/hapijs/isemail/issues/158)
+- [`hapijs/isemail#158`](https://github.com/hapijs/isemail/issues/158)
 
 However, there are those that might need an `ES5` version of `isemail` and don't want to specify transpilation for only this package in the `node_modules` folder in a webpack config, for example.
 
@@ -62,7 +62,7 @@ As of `3.1.1`, the `callback` parameter is deprecated, and will be removed in `4
 
 ```js
 $ node
-> var Isemail = require('isemail');
+> var Isemail = require('isemail-es5');
 undefined
 > Isemail.validate('test@iana.org');
 true
@@ -76,7 +76,4 @@ true
 6
 ```
 
-<sup name="footnote-1">&#91;1&#93;</sup>: if this badge indicates the build is passing, then isemail has 100% code coverage.
-
-[skeggse]: https://github.com/skeggse "Eli Skeggs"
 [tests]: http://isemail.info/_system/is_email/test/?all‎ "is_email test suite"
